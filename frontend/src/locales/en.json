@@ -1,0 +1,22 @@
+{
+  "nav.search": "Search",
+  "nav.dashboard": "Dashboard",
+  "nav.schemes": "Schemes",
+  "nav.chat": "AI Chat",
+  "nav.login": "Login",
+  "nav.register": "Sign Up",
+  "nav.logout": "Logout",
+  "nav.profile": "Profile",
+  "home.hero.title": "Find Every Government Scheme You're Entitled To",
+  "home.hero.subtitle": "SchemeSathi AI matches your profile to Central & State welfare schemes — in plain language, in your language.",
+  "home.hero.cta": "Get Started Free",
+  "home.hero.browse": "Browse Schemes",
+  "recommend.title": "Your Recommended Schemes",
+  "recommend.empty": "No schemes matched your profile.",
+  "chat.placeholder": "Ask about schemes…",
+  "profile.title": "Your Profile",
+  "profile.save": "Save Profile",
+  "search.title": "Search Schemes",
+  "search.placeholder": "e.g. farmer, scholarship, housing…",
+  "checklist.title": "Document Checklist"
+}

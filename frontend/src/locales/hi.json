@@ -1,0 +1,22 @@
+{
+  "nav.search": "खोजें",
+  "nav.dashboard": "डैशबोर्ड",
+  "nav.schemes": "योजनाएं",
+  "nav.chat": "AI चैट",
+  "nav.login": "लॉगिन",
+  "nav.register": "साइन अप",
+  "nav.logout": "लॉगआउट",
+  "nav.profile": "प्रोफ़ाइल",
+  "home.hero.title": "अपनी पात्र हर सरकारी योजना खोजें",
+  "home.hero.subtitle": "SchemeSathi AI आपकी प्रोफ़ाइल से केंद्र और राज्य सरकार की योजनाएं मिलाता है।",
+  "home.hero.cta": "शुरू करें",
+  "home.hero.browse": "योजनाएं देखें",
+  "recommend.title": "आपकी अनुशंसित योजनाएं",
+  "recommend.empty": "कोई योजना नहीं मिली।",
+  "chat.placeholder": "योजनाओं के बारे में पूछें…",
+  "profile.title": "आपकी प्रोफ़ाइल",
+  "profile.save": "प्रोफ़ाइल सेव करें",
+  "search.title": "योजनाएं खोजें",
+  "search.placeholder": "जैसे किसान, छात्रवृत्ति, आवास…",
+  "checklist.title": "दस्तावेज़ चेकलिस्ट"
+}

@@ -1,0 +1,22 @@
+{
+  "nav.search": "వెతకండి",
+  "nav.dashboard": "డాష్‌బోర్డ్",
+  "nav.schemes": "పథకాలు",
+  "nav.chat": "AI చాట్",
+  "nav.login": "లాగిన్",
+  "nav.register": "సైన్ అప్",
+  "nav.logout": "లాగ్ అవుట్",
+  "nav.profile": "ప్రొఫైల్",
+  "home.hero.title": "మీకు అర్హమైన ప్రతి ప్రభుత్వ పథకాన్ని కనుగొనండి",
+  "home.hero.subtitle": "SchemeSathi AI మీ ప్రొఫైల్‌తో కేంద్ర మరియు రాష్ట్ర పథకాలను సరిపోల్చుతుంది.",
+  "home.hero.cta": "ప్రారంభించండి",
+  "home.hero.browse": "పథకాలు చూడండి",
+  "recommend.title": "మీకు సిఫారసు చేయబడిన పథకాలు",
+  "recommend.empty": "పథకాలు కనుగొనబడలేదు.",
+  "chat.placeholder": "పథకాల గురించి అడగండి…",
+  "profile.title": "మీ ప్రొఫైల్",
+  "profile.save": "ప్రొఫైల్ సేవ్ చేయండి",
+  "search.title": "పథకాలు వెతకండి",
+  "search.placeholder": "ఉదా. రైతు, స్కాలర్‌షిప్, గృహనిర్మాణం…",
+  "checklist.title": "పత్రాల చెక్‌లిస్ట్"
+}
