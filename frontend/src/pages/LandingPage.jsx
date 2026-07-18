@@ -93,7 +93,7 @@ export default function LandingPage() {
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
         <GovCard className="p-10 sm:p-12 text-center bg-primary-600 border-primary-700 text-white">
-          <Logo size="lg" showText={false} className="justify-center mb-6 [&>div:first-child]:bg-white [&>div:first-child]:shadow-none" />
+          <Logo size="lg" showText={false} className="justify-center mb-6 [&>div:first-child]:bg-white [&>div:first-child]:shadow-none [&>div:first-child]:border [&>div:first-child]:border-white"/>
           <h2 className="text-2xl sm:text-3xl font-bold mb-3">Start Your Scheme Search Today</h2>
           <p className="text-blue-100 mb-8 max-w-lg mx-auto">
             Create your profile and get personalized scheme recommendations in seconds.

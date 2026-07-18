@@ -24,7 +24,7 @@ from app.ai.embeddings import embed_and_store_scheme
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-DATASETS_PATH = Path(__file__).parent.parent.parent.parent / "datasets" / "schemes.json"
+DATASETS_PATH = Path(__file__).parent.parent.parent / "datasets" / "schemes.json"
 
 
 def seed():

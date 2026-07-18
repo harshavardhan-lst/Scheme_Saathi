@@ -1,0 +1,455 @@
+[
+  {
+    "scheme_name": "PM Kisan Samman Nidhi",
+    "description": "Direct income support of ₹6,000 per year in three equal installments to small and marginal farmer families across India.",
+    "benefits": "₹6,000 per year credited directly to bank account in three installments of ₹2,000 each.",
+    "documents": ["Aadhaar Card", "Land Records (Khasra/Khatauni)", "Bank Passbook", "Mobile Number linked to Aadhaar"],
+    "application_link": "https://pmkisan.gov.in",
+    "state": "Central",
+    "deadline": null,
+    "eligibility": {
+      "occupation": ["Farmer"],
+      "max_income": 200000,
+      "states": [],
+      "category": ["General", "OBC", "SC", "ST", "EWS"],
+      "disability_required": false,
+      "min_age": 18,
+      "max_age": 120
+    }
+  },
+  {
+    "scheme_name": "Pradhan Mantri Awas Yojana (Gramin)",
+    "description": "Housing scheme providing financial assistance to homeless and kutcha house dwellers in rural areas to construct pucca houses.",
+    "benefits": "₹1.20 lakh in plain areas and ₹1.30 lakh in hilly/difficult areas for house construction.",
+    "documents": ["Aadhaar Card", "BPL Certificate", "Bank Passbook", "Land Ownership Certificate", "Income Certificate"],
+    "application_link": "https://pmayg.nic.in",
+    "state": "Central",
+    "deadline": null,
+    "eligibility": {
+      "occupation": [],
+      "max_income": 100000,
+      "states": [],
+      "category": ["OBC", "SC", "ST", "EWS"],
+      "disability_required": false,
+      "min_age": 18,
+      "max_age": 120
+    }
+  },
+  {
+    "scheme_name": "National Scholarship Portal — Pre-Matric SC Scholarship",
+    "description": "Scholarship for SC students studying in Class 9 and 10 to prevent dropout and encourage continuation of education.",
+    "benefits": "₹150/month (day scholar) or ₹350/month (hosteller) plus one-time ad-hoc grant of ₹750/₹1,000.",
+    "documents": ["Aadhaar Card", "Caste Certificate", "Income Certificate", "Previous Year Marksheet", "Bank Passbook", "School Enrollment Certificate"],
+    "application_link": "https://scholarships.gov.in",
+    "state": "Central",
+    "deadline": "2026-11-30",
+    "eligibility": {
+      "occupation": ["Student"],
+      "max_income": 250000,
+      "states": [],
+      "category": ["SC"],
+      "disability_required": false,
+      "min_age": 14,
+      "max_age": 20
+    }
+  },
+  {
+    "scheme_name": "Post-Matric Scholarship for OBC Students",
+    "description": "Financial support for OBC students pursuing post-matriculation or post-secondary education to complete their education.",
+    "benefits": "Maintenance allowance of ₹230–₹1,200/month + course fee reimbursement depending on course type.",
+    "documents": ["Aadhaar Card", "OBC Certificate", "Income Certificate", "Admission Letter", "Bank Passbook"],
+    "application_link": "https://scholarships.gov.in",
+    "state": "Central",
+    "deadline": "2026-10-31",
+    "eligibility": {
+      "occupation": ["Student"],
+      "max_income": 100000,
+      "states": [],
+      "category": ["OBC"],
+      "disability_required": false,
+      "min_age": 15,
+      "max_age": 30
+    }
+  },
+  {
+    "scheme_name": "Pradhan Mantri Fasal Bima Yojana",
+    "description": "Crop insurance scheme providing financial support to farmers suffering crop loss due to unforeseen events like natural calamities, pests and diseases.",
+    "benefits": "Insurance coverage for crop loss; premiums as low as 1.5% for Rabi crops and 2% for Kharif crops, rest paid by government.",
+    "documents": ["Aadhaar Card", "Land Records", "Bank Passbook", "Sowing Certificate", "Kisan Credit Card (optional)"],
+    "application_link": "https://pmfby.gov.in",
+    "state": "Central",
+    "deadline": null,
+    "eligibility": {
+      "occupation": ["Farmer"],
+      "max_income": 500000,
+      "states": [],
+      "category": ["General", "OBC", "SC", "ST", "EWS"],
+      "disability_required": false,
+      "min_age": 18,
+      "max_age": 120
+    }
+  },
+  {
+    "scheme_name": "Sukanya Samriddhi Yojana",
+    "description": "Small savings scheme for the girl child to ensure financial security for education and marriage expenses.",
+    "benefits": "High interest rate (currently 8.2% p.a.), tax benefits under Section 80C, partial withdrawal allowed at age 18.",
+    "documents": ["Girl Child's Birth Certificate", "Parent/Guardian Aadhaar", "Address Proof", "Photo"],
+    "application_link": "https://www.indiapost.gov.in",
+    "state": "Central",
+    "deadline": null,
+    "eligibility": {
+      "occupation": [],
+      "max_income": null,
+      "states": [],
+      "category": ["General", "OBC", "SC", "ST", "EWS"],
+      "disability_required": false,
+      "min_age": 0,
+      "max_age": 10,
+      "gender": "Female"
+    }
+  },
+  {
+    "scheme_name": "PM Mudra Yojana — Shishu Loan",
+    "description": "Collateral-free microfinance loan for small business owners and entrepreneurs for starting or expanding micro enterprises.",
+    "benefits": "Loans up to ₹50,000 (Shishu), ₹5 lakh (Kishore), ₹10 lakh (Tarun) at subsidized interest rates.",
+    "documents": ["Aadhaar Card", "PAN Card", "Business Plan", "Bank Statements (6 months)", "Address Proof"],
+    "application_link": "https://www.mudra.org.in",
+    "state": "Central",
+    "deadline": null,
+    "eligibility": {
+      "occupation": ["Self-Employed", "Business Owner", "Entrepreneur"],
+      "max_income": 1000000,
+      "states": [],
+      "category": ["General", "OBC", "SC", "ST", "EWS"],
+      "disability_required": false,
+      "min_age": 18,
+      "max_age": 65
+    }
+  },
+  {
+    "scheme_name": "Atal Pension Yojana",
+    "description": "Government-backed pension scheme for workers in the unorganized sector ensuring guaranteed minimum pension after retirement.",
+    "benefits": "Guaranteed minimum pension of ₹1,000–₹5,000 per month from age 60 based on contribution amount.",
+    "documents": ["Aadhaar Card", "Bank Account (savings)", "Mobile Number"],
+    "application_link": "https://npscra.nsdl.co.in",
+    "state": "Central",
+    "deadline": null,
+    "eligibility": {
+      "occupation": ["Daily Wage Worker", "Farmer", "Self-Employed", "Domestic Worker"],
+      "max_income": 500000,
+      "states": [],
+      "category": ["General", "OBC", "SC", "ST", "EWS"],
+      "disability_required": false,
+      "min_age": 18,
+      "max_age": 40
+    }
+  },
+  {
+    "scheme_name": "Ayushman Bharat — PM Jan Arogya Yojana",
+    "description": "Health insurance scheme covering secondary and tertiary hospitalization for poor and vulnerable families.",
+    "benefits": "Health cover of ₹5 lakh per family per year for secondary and tertiary care hospitalization at empanelled hospitals.",
+    "documents": ["Aadhaar Card", "Ration Card", "Income Certificate", "Ayushman Card"],
+    "application_link": "https://pmjay.gov.in",
+    "state": "Central",
+    "deadline": null,
+    "eligibility": {
+      "occupation": [],
+      "max_income": 100000,
+      "states": [],
+      "category": ["OBC", "SC", "ST", "EWS"],
+      "disability_required": false,
+      "min_age": 0,
+      "max_age": 120
+    }
+  },
+  {
+    "scheme_name": "Rajiv Gandhi Bhoomi Vikas Yojana (Telangana)",
+    "description": "State scheme providing land to landless SC and ST farmers in Telangana for agricultural use.",
+    "benefits": "3 acres of agricultural land allotted free of cost to eligible SC/ST landless families.",
+    "documents": ["Aadhaar Card", "Caste Certificate", "Income Certificate", "Residence Certificate (Telangana)", "No Land Possession Certificate"],
+    "application_link": "https://tgbhoomi.telangana.gov.in",
+    "state": "Telangana",
+    "deadline": null,
+    "eligibility": {
+      "occupation": ["Farmer", "Daily Wage Worker"],
+      "max_income": 100000,
+      "states": ["Telangana"],
+      "category": ["SC", "ST"],
+      "disability_required": false,
+      "min_age": 18,
+      "max_age": 120
+    }
+  },
+  {
+    "scheme_name": "Kalyana Lakshmi / Shaadi Mubarak (Telangana)",
+    "description": "Financial assistance for marriage of girls from SC, ST, BC, Minority communities in Telangana.",
+    "benefits": "Financial assistance of ₹1,00,116 paid directly to the bride's bank account for marriage expenses.",
+    "documents": ["Bride's Aadhaar", "Groom's Aadhaar", "Marriage Invitation / Registration", "Caste Certificate", "Income Certificate", "Bank Passbook"],
+    "application_link": "https://kalyanalakshmi.telangana.gov.in",
+    "state": "Telangana",
+    "deadline": null,
+    "eligibility": {
+      "occupation": [],
+      "max_income": 200000,
+      "states": ["Telangana"],
+      "category": ["SC", "ST", "OBC"],
+      "disability_required": false,
+      "min_age": 18,
+      "max_age": 35,
+      "gender": "Female"
+    }
+  },
+  {
+    "scheme_name": "Rythu Bandhu (Telangana)",
+    "description": "Investment support scheme for farmers in Telangana providing ₹10,000 per acre per season for farm inputs.",
+    "benefits": "₹10,000 per acre per season (₹20,000/year) transferred directly to farmer's bank account.",
+    "documents": ["Aadhaar Card", "Pattadar Passbook (land records)", "Bank Passbook"],
+    "application_link": "https://rythubandhu.telangana.gov.in",
+    "state": "Telangana",
+    "deadline": null,
+    "eligibility": {
+      "occupation": ["Farmer"],
+      "max_income": 500000,
+      "states": ["Telangana"],
+      "category": ["General", "OBC", "SC", "ST", "EWS"],
+      "disability_required": false,
+      "min_age": 18,
+      "max_age": 120
+    }
+  },
+  {
+    "scheme_name": "YSR Rythu Bharosa (Andhra Pradesh)",
+    "description": "Investment support scheme for farmers in Andhra Pradesh covering crop cultivation input costs.",
+    "benefits": "₹13,500 per year per farmer family — ₹7,500 from AP government and ₹6,000 from PM Kisan combined.",
+    "documents": ["Aadhaar Card", "Pattadar Passbook", "Bank Passbook", "Mobile Number"],
+    "application_link": "https://apagrisnet.gov.in",
+    "state": "Andhra Pradesh",
+    "deadline": null,
+    "eligibility": {
+      "occupation": ["Farmer"],
+      "max_income": 500000,
+      "states": ["Andhra Pradesh"],
+      "category": ["General", "OBC", "SC", "ST", "EWS"],
+      "disability_required": false,
+      "min_age": 18,
+      "max_age": 120
+    }
+  },
+  {
+    "scheme_name": "National Disabled Welfare Scholarship",
+    "description": "Scholarship for students with benchmark disabilities to pursue professional/technical courses at recognized institutions.",
+    "benefits": "₹30,000/year for Group A courses (engineering, medicine), ₹20,000/year for Group B, ₹10,000/year for Group C.",
+    "documents": ["Aadhaar Card", "Disability Certificate (min 40%)", "Income Certificate", "Admission Proof", "Bank Passbook"],
+    "application_link": "https://scholarships.gov.in",
+    "state": "Central",
+    "deadline": "2026-10-31",
+    "eligibility": {
+      "occupation": ["Student"],
+      "max_income": 250000,
+      "states": [],
+      "category": ["General", "OBC", "SC", "ST", "EWS"],
+      "disability_required": true,
+      "min_age": 14,
+      "max_age": 35
+    }
+  },
+  {
+    "scheme_name": "Stand Up India Scheme",
+    "description": "Facilitates bank loans between ₹10 lakh and ₹1 crore to SC/ST and women borrowers for setting up greenfield enterprises.",
+    "benefits": "Composite loan of ₹10 lakh to ₹1 crore at bank rate, repayable in 7 years with 18-month moratorium.",
+    "documents": ["Aadhaar Card", "PAN Card", "Caste Certificate (SC/ST)", "Business Plan", "Bank Statements", "Address Proof"],
+    "application_link": "https://www.standupmitra.in",
+    "state": "Central",
+    "deadline": null,
+    "eligibility": {
+      "occupation": ["Entrepreneur", "Business Owner", "Self-Employed"],
+      "max_income": null,
+      "states": [],
+      "category": ["SC", "ST"],
+      "disability_required": false,
+      "min_age": 18,
+      "max_age": 65
+    }
+  },
+  {
+    "scheme_name": "Pradhan Mantri Kaushal Vikas Yojana (PMKVY)",
+    "description": "Skill development program providing free short-duration skill training in industry-relevant trades for youth.",
+    "benefits": "Free skill training, certification recognized by industry, monetary reward on certification (up to ₹8,000), placement assistance.",
+    "documents": ["Aadhaar Card", "Class 10 Marksheet", "Bank Passbook", "Passport Photo"],
+    "application_link": "https://pmkvyofficial.org",
+    "state": "Central",
+    "deadline": null,
+    "eligibility": {
+      "occupation": ["Student", "Job Seeker", "Daily Wage Worker", "Unemployed"],
+      "max_income": 500000,
+      "states": [],
+      "category": ["General", "OBC", "SC", "ST", "EWS"],
+      "disability_required": false,
+      "min_age": 15,
+      "max_age": 45
+    }
+  },
+  {
+    "scheme_name": "National Food Security Act — Public Distribution System",
+    "description": "Subsidized food grains (rice, wheat, coarse grains) for priority households and Antyodaya families through Fair Price Shops.",
+    "benefits": "5 kg food grain per person per month at highly subsidized prices: rice ₹3/kg, wheat ₹2/kg, coarse grains ₹1/kg.",
+    "documents": ["Ration Card", "Aadhaar Card", "Address Proof"],
+    "application_link": "https://nfsa.gov.in",
+    "state": "Central",
+    "deadline": null,
+    "eligibility": {
+      "occupation": [],
+      "max_income": 100000,
+      "states": [],
+      "category": ["OBC", "SC", "ST", "EWS"],
+      "disability_required": false,
+      "min_age": 0,
+      "max_age": 120
+    }
+  },
+  {
+    "scheme_name": "PM SVANidhi — Street Vendor Micro Credit",
+    "description": "Micro credit facility for street vendors to resume livelihoods and move towards digital transactions.",
+    "benefits": "Collateral-free working capital loan: ₹10,000 (1st), ₹20,000 (2nd), ₹50,000 (3rd) on timely repayment. 7% interest subsidy.",
+    "documents": ["Aadhaar Card", "Vending Certificate / Letter of Recommendation", "Bank Passbook", "Photo"],
+    "application_link": "https://pmsvanidhi.mohua.gov.in",
+    "state": "Central",
+    "deadline": null,
+    "eligibility": {
+      "occupation": ["Street Vendor", "Self-Employed"],
+      "max_income": 300000,
+      "states": [],
+      "category": ["General", "OBC", "SC", "ST", "EWS"],
+      "disability_required": false,
+      "min_age": 18,
+      "max_age": 65
+    }
+  },
+  {
+    "scheme_name": "Indira Gandhi National Old Age Pension",
+    "description": "Monthly pension for below poverty line senior citizens aged 60 and above under the National Social Assistance Programme.",
+    "benefits": "₹200/month for ages 60–79; ₹500/month for ages 80 and above, paid directly to bank account.",
+    "documents": ["Aadhaar Card", "Age Proof (birth certificate / school certificate)", "BPL Certificate", "Bank Passbook"],
+    "application_link": "https://nsap.nic.in",
+    "state": "Central",
+    "deadline": null,
+    "eligibility": {
+      "occupation": [],
+      "max_income": 100000,
+      "states": [],
+      "category": ["OBC", "SC", "ST", "EWS"],
+      "disability_required": false,
+      "min_age": 60,
+      "max_age": 120
+    }
+  },
+  {
+    "scheme_name": "Indira Gandhi National Widow Pension",
+    "description": "Monthly pension for widows aged 40–79 belonging to BPL households under National Social Assistance Programme.",
+    "benefits": "₹300/month financial assistance transferred directly to beneficiary's bank account.",
+    "documents": ["Aadhaar Card", "Husband's Death Certificate", "Age Proof", "BPL Certificate", "Bank Passbook"],
+    "application_link": "https://nsap.nic.in",
+    "state": "Central",
+    "deadline": null,
+    "eligibility": {
+      "occupation": [],
+      "max_income": 100000,
+      "states": [],
+      "category": ["OBC", "SC", "ST", "EWS"],
+      "disability_required": false,
+      "min_age": 40,
+      "max_age": 79,
+      "gender": "Female"
+    }
+  },
+  {
+    "scheme_name": "Central Sector Scholarship for College Students",
+    "description": "Merit-based scholarship for students from low-income families who scored 80th percentile or above in Class 12 board exams.",
+    "benefits": "₹12,000/year for first 3 years of UG studies; ₹20,000/year for PG studies, renewed annually based on performance.",
+    "documents": ["Aadhaar Card", "Class 12 Marksheet", "Income Certificate", "Admission Letter", "Bank Passbook"],
+    "application_link": "https://scholarships.gov.in",
+    "state": "Central",
+    "deadline": "2026-10-31",
+    "eligibility": {
+      "occupation": ["Student"],
+      "max_income": 450000,
+      "states": [],
+      "category": ["General", "OBC", "SC", "ST", "EWS"],
+      "disability_required": false,
+      "min_age": 17,
+      "max_age": 25
+    }
+  },
+  {
+    "scheme_name": "Startup India Seed Fund Scheme",
+    "description": "Financial assistance for early-stage startups for proof of concept, prototype development, product trials and market entry.",
+    "benefits": "Up to ₹20 lakh for PoC/prototype; up to ₹50 lakh for market entry via Incubators. Equity-free grants.",
+    "documents": ["DPIIT Recognition Certificate", "Startup Pitch Deck", "PAN Card", "GST Registration", "Bank Statements"],
+    "application_link": "https://seedfund.startupindia.gov.in",
+    "state": "Central",
+    "deadline": null,
+    "eligibility": {
+      "occupation": ["Entrepreneur", "Business Owner"],
+      "max_income": null,
+      "states": [],
+      "category": ["General", "OBC", "SC", "ST", "EWS"],
+      "disability_required": false,
+      "min_age": 18,
+      "max_age": 45
+    }
+  },
+  {
+    "scheme_name": "Annasaheb Patil Economic Development Corporation (Maharashtra)",
+    "description": "Low-interest loans for economically weaker Maratha community members in Maharashtra for business and education.",
+    "benefits": "Loans up to ₹10 lakh at 1–6% interest for business; interest reimbursement scholarships for education up to ₹5 lakh.",
+    "documents": ["Aadhaar Card", "Domicile Certificate (Maharashtra)", "Income Certificate", "Business Plan or Admission Proof", "Bank Passbook"],
+    "application_link": "https://mahaswayam.maharashtra.gov.in",
+    "state": "Maharashtra",
+    "deadline": null,
+    "eligibility": {
+      "occupation": ["Entrepreneur", "Student", "Self-Employed"],
+      "max_income": 800000,
+      "states": ["Maharashtra"],
+      "category": ["EWS"],
+      "disability_required": false,
+      "min_age": 18,
+      "max_age": 55
+    }
+  },
+  {
+    "scheme_name": "Kerala Karshaka Welfare Fund Pension",
+    "description": "Monthly pension for registered farmers in Kerala under the Kerala Karshaka Welfare Fund Board.",
+    "benefits": "₹1,600–₹2,500/month pension for registered farmers above 60 years with at least 5 years contribution.",
+    "documents": ["Aadhaar Card", "Karshaka Welfare Fund Membership Card", "Age Proof", "Bank Passbook"],
+    "application_link": "https://kkwfb.kerala.gov.in",
+    "state": "Kerala",
+    "deadline": null,
+    "eligibility": {
+      "occupation": ["Farmer"],
+      "max_income": 300000,
+      "states": ["Kerala"],
+      "category": ["General", "OBC", "SC", "ST", "EWS"],
+      "disability_required": false,
+      "min_age": 60,
+      "max_age": 120
+    }
+  },
+  {
+    "scheme_name": "Divyangjan Swavalamban Yojana (Assistive Devices)",
+    "description": "Free distribution of aids and assistive devices to persons with disability to promote independence and quality of life.",
+    "benefits": "Free provision of aids like wheelchairs, hearing aids, prosthetics, white canes, tricycles, Braille kits etc.",
+    "documents": ["Aadhaar Card", "Disability Certificate (min 40%)", "Income Certificate", "Photo"],
+    "application_link": "https://www.alimco.in",
+    "state": "Central",
+    "deadline": null,
+    "eligibility": {
+      "occupation": [],
+      "max_income": 200000,
+      "states": [],
+      "category": ["General", "OBC", "SC", "ST", "EWS"],
+      "disability_required": true,
+      "min_age": 0,
+      "max_age": 120
+    }
+  }
+]
