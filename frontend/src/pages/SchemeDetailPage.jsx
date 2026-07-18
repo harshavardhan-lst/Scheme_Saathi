@@ -22,6 +22,7 @@ export default function SchemeDetailPage() {
   const [eligibility, setEligibility] = useState(null)
   const [simplified, setSimplified] = useState(null)
   const [simplifyLoading, setSimplifyLoading] = useState(false)
+  const [simplifyError, setSimplifyError] = useState('')
 
   useEffect(() => {
     setLoading(true)
@@ -39,9 +40,10 @@ export default function SchemeDetailPage() {
 
   function handleSimplify() {
     setSimplifyLoading(true)
+    setSimplifyError('')
     explainScheme(id, language)
       .then((r) => setSimplified(r.data))
-      .catch(() => {})
+      .catch((e) => setSimplifyError(e.message || 'Failed to generate summary. Please check your AI keys.'))
       .finally(() => setSimplifyLoading(false))
   }
 
@@ -118,7 +120,15 @@ export default function SchemeDetailPage() {
             {simplified ? (
               <p className="text-gov-muted text-sm leading-relaxed">{simplified.simplified_eligibility}</p>
             ) : (
-              <p className="text-gov-muted text-sm">Click the button to get a simplified explanation in plain language.</p>
+              <div>
+                <p className="text-gov-muted text-sm">Click the button to get a simplified explanation in plain language.</p>
+                {simplifyError && (
+                  <p className="text-gov-danger text-xs mt-3 border border-red-100 bg-red-50 p-3 rounded-card flex items-start gap-2 animate-slide-up">
+                    <XCircle size={16} className="shrink-0 mt-0.5" />
+                    <span><strong>Error:</strong> {simplifyError}</span>
+                  </p>
+                )}
+              </div>
             )}
           </GovCard>
 
