@@ -6,8 +6,10 @@ import Logo from '../ui/Logo'
 import {
   LogOut, User, MessageSquare, Search, LayoutDashboard,
   Star, Bell, ChevronDown, Globe, Menu, X, Check, BellRing,
-  Compass, ClipboardList, HelpCircle
+  Compass, ClipboardList, HelpCircle, Clock
 } from 'lucide-react'
+import { getProfile } from '../../services/profile'
+import { getRecommendations } from '../../services/recommend'
 
 export default function Navbar() {
   const { isAuthenticated, logout, user } = useAuth()
@@ -20,11 +22,112 @@ export default function Navbar() {
   const [notifDropdownOpen, setNotifDropdownOpen] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  const [notifications, setNotifications] = useState([
-    { id: 1, text: 'Check your eligibility for PM-KISAN scheme', read: false, time: '2h ago' },
-    { id: 2, text: 'New Central scheme added: PM-VishwaKarma', read: false, time: '1d ago' },
-    { id: 3, text: 'Complete your profile to get matched instantly', read: true, time: '3d ago' },
-  ])
+  const [notifications, setNotifications] = useState([])
+
+  useEffect(() => {
+    if (!isAuthenticated) {
+      setNotifications([
+        { id: 'welcome', text: 'Welcome to SchemeSathi! Create an account to find eligible schemes.', read: false, time: 'Just now', type: 'welcome' },
+        { id: 'search-tip', text: 'Tip: You can use the search bar to browse over 100+ schemes.', read: false, time: '5m ago', type: 'search' }
+      ])
+      return
+    }
+
+    let isMounted = true
+    
+    Promise.all([
+      getProfile().then((r) => r.data).catch(() => null),
+      getRecommendations().then((r) => r.data.recommendations || []).catch(() => [])
+    ]).then(([profile, recs]) => {
+      if (!isMounted) return
+      
+      const dynamicNotifs = []
+      
+      if (profile) {
+        const incompleteFields = []
+        if (!profile.age) incompleteFields.push('Age')
+        if (!profile.state) incompleteFields.push('State')
+        if (!profile.occupation) incompleteFields.push('Occupation')
+        if (profile.income === null || profile.income === undefined) incompleteFields.push('Income')
+
+        if (incompleteFields.length > 0) {
+          dynamicNotifs.push({
+            id: 'profile-incomplete',
+            text: `Please complete your profile (missing: ${incompleteFields.join(', ')}).`,
+            read: false,
+            time: 'Just now',
+            type: 'profile'
+          })
+        } else {
+          dynamicNotifs.push({
+            id: 'profile-complete',
+            text: 'Your eligibility profile is fully complete and up-to-date!',
+            read: true,
+            time: '1d ago',
+            type: 'profile'
+          })
+        }
+      }
+
+      if (recs && recs.length > 0) {
+        dynamicNotifs.push({
+          id: 'recs-found',
+          text: `You have matched with ${recs.length} government schemes based on your profile!`,
+          read: false,
+          time: 'Just now',
+          type: 'recommendation'
+        })
+
+        recs.forEach((r) => {
+          if (r.deadline) {
+            const daysLeft = Math.ceil((new Date(r.deadline) - new Date()) / (1000 * 60 * 60 * 24))
+            if (daysLeft > 0 && daysLeft <= 30) {
+              dynamicNotifs.push({
+                id: `deadline-${r.scheme_id}`,
+                text: `Deadline for ${r.scheme_name || r.name} is in ${daysLeft} days.`,
+                read: false,
+                time: '1d ago',
+                type: 'deadline'
+              })
+            }
+          }
+        })
+      } else if (profile) {
+        dynamicNotifs.push({
+          id: 'no-recs',
+          text: 'No schemes currently match your profile. Check back for new listings.',
+          read: true,
+          time: 'Just now',
+          type: 'recommendation'
+        })
+      }
+
+      if (dynamicNotifs.length === 0) {
+        dynamicNotifs.push({
+          id: 'generic-welcome',
+          text: 'Welcome back! Explore schemes or chat with the AI assistant.',
+          read: false,
+          time: 'Just now',
+          type: 'welcome'
+        })
+      }
+
+      setNotifications(dynamicNotifs)
+    })
+
+    return () => {
+      isMounted = false
+    }
+  }, [isAuthenticated])
+
+  const getNotifIcon = (type) => {
+    switch (type) {
+      case 'profile': return <User size={14} className="text-purple-600" />
+      case 'recommendation': return <Star size={14} className="text-gov-warning" />
+      case 'deadline': return <Clock size={14} className="text-gov-danger" />
+      default: return <Bell size={14} className="text-primary-600" />
+    }
+  }
 
   const unreadCount = notifications.filter((n) => !n.read).length
   const profileRef = useRef(null)
@@ -129,9 +232,13 @@ export default function Navbar() {
                 aria-label={`Notifications${unreadCount > 0 ? `, ${unreadCount} unread` : ''}`}
                 aria-expanded={notifDropdownOpen}
               >
-                <Bell size={18} />
+                {unreadCount > 0 ? (
+                  <BellRing size={18} className="text-gov-warning animate-pulse" />
+                ) : (
+                  <Bell size={18} />
+                )}
                 {unreadCount > 0 && (
-                  <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-gov-danger rounded-full" aria-hidden="true" />
+                  <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-gov-danger rounded-full animate-ping" aria-hidden="true" />
                 )}
               </button>
 
@@ -152,12 +259,17 @@ export default function Navbar() {
                     {notifications.map((n) => (
                       <div
                         key={n.id}
-                        className={`p-3 rounded-card border text-left ${
+                        className={`p-3 rounded-card border text-left flex items-start gap-2.5 ${
                           n.read ? 'bg-gov-bg border-transparent text-gov-muted' : 'bg-blue-50 border-blue-100 text-gov-text'
                         }`}
                       >
-                        <p className="text-xs leading-relaxed">{n.text}</p>
-                        <span className="text-[10px] text-gov-muted block mt-1">{n.time}</span>
+                        <div className="mt-0.5 shrink-0">
+                          {getNotifIcon(n.type)}
+                        </div>
+                        <div className="flex-1">
+                          <p className="text-xs leading-relaxed">{n.text}</p>
+                          <span className="text-[10px] text-gov-muted block mt-1">{n.time}</span>
+                        </div>
                       </div>
                     ))}
                   </div>
