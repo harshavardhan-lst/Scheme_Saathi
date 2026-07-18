@@ -104,9 +104,15 @@ export default function SchemeDetailPage() {
                 <FileText size={16} className="text-primary-600" /> Plain Language Explanation
               </h2>
               {!simplified && (
-                <button onClick={handleSimplify} disabled={simplifyLoading} className="btn-primary py-1.5 px-4 text-xs shrink-0">
-                  {simplifyLoading ? <Spinner size="sm" /> : 'Get Summary'}
-                </button>
+                isAuthenticated ? (
+                  <button onClick={handleSimplify} disabled={simplifyLoading} className="btn-primary py-1.5 px-4 text-xs shrink-0">
+                    {simplifyLoading ? <Spinner size="sm" /> : 'Get Summary'}
+                  </button>
+                ) : (
+                  <Link to="/login" className="btn-secondary py-1.5 px-4 text-xs shrink-0">
+                    Login to Get Summary
+                  </Link>
+                )
               )}
             </div>
             {simplified ? (
